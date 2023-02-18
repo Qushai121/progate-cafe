@@ -1,0 +1,362 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --main-color:#0F8B8D;
+    --second-color:#143642;
+    --third-color:#EC9A29;
+    --fourth-color:#A8201A;
+   
+}
+body{
+    color: #F9FBFE;
+}
+
+header{
+
+    background-image:linear-gradient(rgba(20, 54, 66, 0.7),rgba(20, 54, 66, 0.7)),url(../assets/images/Coffe\ Header.png);
+   border-bottom-right-radius: 20px;
+   border-bottom-left-radius: 20px;
+    height: 50vh;
+    background-size: cover;
+}
+
+.logo-wrapper{
+    padding: 20px 0px 0px 40px;
+}
+
+.logo{
+    width: 137px;
+    height: 27px;
+}
+
+.nav-select{
+    font-weight: 400;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.nav-select a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.title-header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-weight: 800;
+    padding-top:40px ;
+    text-align: center;
+    margin: 40px auto;
+    width: 256px;
+    height: 86px;
+}
+
+.body-home{
+    margin: 0px 41px 0px 41px;
+}
+
+.introduction{
+    padding-top:40px ;
+    padding-bottom:40px ;
+}
+
+.introduction img{
+    border-radius: 10px;
+    margin: 10px 40px;
+ width: 200px;
+ object-fit: cover;
+ height: 300px;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.title-message{
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--main-color);
+
+}
+.find-ig{
+    color: var(--third-color);
+}
+.find-ig span{
+    color: var(--main-color);
+}
+
+
+.paragraph{
+  color: var(--second-color);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.product{
+    margin: 20px 0px;
+}
+
+.product img{
+    margin: 10px 40px;
+    border-radius: 10px;
+    width: 200px;
+    height: 205px;
+    object-fit: cover;
+}
+
+.separete{
+    background: var(--third-color);
+    height: 3px;
+    width: 118px;
+}
+
+.separete-long-pro{
+    width: 166px;
+}
+.separete-long-hang{
+    width: 159px;
+}
+
+.btn {
+    border: none;
+    margin: 20px 0px;
+    background-color: var(--fourth-color);
+    height: 28px;
+    width: 135px;
+    border-radius: 55px;
+}
+
+.link-button{
+    font-weight: 400;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+    line-height: 15px;
+}
+
+.hangout{
+    margin: 30px 0px;
+}
+
+.hangout img{
+    border-radius: 10px;
+    margin: 20px 40px;
+ width: 200px;
+ object-fit: cover;
+ height: 205px;
+}
+
+.find-message{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.galery-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.galery-wrapper img{
+    width: 71.33px;
+    height: 71.33px;
+    object-fit: cover;
+}
+
+.find-message-wrapper{
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+/* responsive start from here sir let'gooooo */
+
+@media only screen and (min-width: 1024px) {
+     
+    header{
+        height: 60vh;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 3rem;
+        
+    }
+
+    .logo-wrapper img{
+        height:2.5rem;
+        width: 100%;
+        
+    }
+   
+    .nav-select div{
+        margin: 0px 10px;
+        
+    }
+    .nav-select div a{
+        font-size: 17px;
+    }
+    .title-header{
+        width: 30rem;
+    }
+    .title-header h1{
+        font-size: 60px;
+    }
+    .title-header p{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .body-home{
+        margin: 0px 140px;
+    }
+    .introduction{
+        display: flex;
+    }
+    .message{
+        margin: 0px 100px;
+    }
+    .message h1{
+        font-size: 40px;
+    }
+    .separete{
+        width: 278px;
+    }
+    .title-message{
+        font-size: 24px;
+    }
+
+    .paragraph{
+        font-size: 16px;
+    }
+    .product{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .hangout{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn{
+        height: 40px;
+        width: 205px;
+    }
+    .find-message{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .galery-wrapper img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .find-message-wrapper{
+        gap: 10px;
+    }
+
+    .responsive{
+        margin-top: 10px;
+    }
+
+
+
+    /* bagian footer */
+}
+@media only screen and (min-width: 1440px) {
+
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10rem;
+        
+    }
+
+    .logo-wrapper img{
+        height:2.5rem;
+        width: 100%;
+        
+    }
+   
+    .nav-select div{
+        margin: 0px 30px;
+        
+    }
+
+    .nav-select div a{
+        font-size: 23px;
+    }
+     .body-home{
+        margin: 30px 20rem;
+     }
+    
+    .introduction img{
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    .product {
+        justify-content: space-between;
+    }
+    .product img{
+        width: 30rem;
+        height: 15rem;
+    }
+
+    .hangout {
+        justify-content: space-between;
+    }
+
+    .hangout img{
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    .title-message{
+        font-size: 30px;
+    }
+
+    .paragraph{
+        font-size: 20px;
+    }
+   
+    
+    .btn{
+        height: 50px;
+        width: 255px;
+    }
+
+    .link-button{
+        font-size: 15px;
+    }
+    
+
+    
+    
+    
+
+
+    /* bagian footer */
+}
