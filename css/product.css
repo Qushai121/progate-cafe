@@ -1,0 +1,257 @@
+:root{
+    --main-color:#0F8B8D;
+    --second-color:#143642;
+    --third-color:#EC9A29;
+    --fourth-color:#A8201A;
+    --message-color:#F9FBFE;
+   
+}
+
+body{
+   
+}
+
+.all-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 100px;
+   gap: 20px;
+}
+
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: white;
+}
+
+.title-card{
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.message-card{
+    color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.card-big{
+    position: relative;
+    margin:5px 0px;
+    background-image: url('../assets/images/Coffee\ background.png');
+    width: 150px;
+    height: 180px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all .2s;
+}
+
+.card-big:hover{
+    transform: scale(1.1);
+}
+
+.card-small{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    transition: all 1s;
+}
+
+.card-small:hover{
+    flex-direction: column-reverse;
+    padding: 0;
+}
+
+button{
+    border: none;
+    color: white;
+}
+
+
+.card-small h6{
+    margin: 6px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.card-small h5{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.card-small img{
+    width: 10rem;
+    margin: 2px 0px;
+}
+
+.detail-wrapper{
+    color: var(--second-color);
+    font-weight: 400;
+}
+
+.detail-wrapper img{
+    display: flex;
+    justify-content: center;
+}
+
+.detail-message{
+    margin: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detail-message h6{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.detail-message h5{
+    font-size: 12px;
+}
+
+.detail-message p{
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.description-detail{
+    margin: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.description-detail h6{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.seperate{
+    width: 20px;
+    background: var(--third-color);
+    height: 1px;
+    width: 280px;
+}
+
+.description-detail p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.detail-wrapper button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 40px;
+    height: 30px;
+    border-radius: 20px;
+    width: 135px;
+    background-color: var(--fourth-color);
+}
+
+.detail-wrapper button img{
+    height: 19px;
+    rotate: -180deg;
+}
+
+.detail-wrapper button p{
+    font-size: 10px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 1024px){
+
+    .title-card{
+        font-size: 60px;
+    }
+
+    .message-card{
+        font-size: 20px;
+    }
+
+    .lagi{
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        margin:0px auto;
+        gap: 2rem;
+    }
+    .card-wrapper button{
+        margin: 1rem;
+    }
+    .card-big{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .card-small-message h6{
+        font-size: 30px;
+    }
+    .card-small-message h5{
+        font-size: 20px;
+    }
+
+    .card-small-img img{
+        height: 200px;
+        width: 250px;
+    }
+
+    .responsive-wrapper{
+        display: flex;
+    }
+    .detail-message{
+        margin-top: 40px;
+        gap: 30px;
+    }
+    .responsive-wrapper img{
+        width: 643px;
+height: 501.35px;
+    }
+    .detail-message h6{
+        font-size: 48px;
+    }
+    .detail-message h5{
+        font-size: 24px;
+    }
+    .detail-message p{
+        font-size: 60px;
+    }
+
+    .description-detail h6{
+        font-size: 48px;
+    }
+    .seperate{
+        height: 4px;
+    }
+    .description-detail p{
+        font-size: 20px;
+        width: 70rem;
+    }
+
+    .detail-wrapper button{
+        border-radius: 50px;
+        height: 60px;
+        width: 355px;
+    }
+
+    .detail-wrapper button img{
+        height: 30px;
+    }
+
+    .detail-wrapper button p{
+        font-size: 16px;
+    }
+}

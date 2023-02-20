@@ -1,0 +1,88 @@
+:root{
+    --main-color:#0F8B8D;
+    --second-color:#143642;
+    --third-color:#EC9A29;
+    --fourth-color:#A8201A;
+    --message-color:#F9FBFE;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo-wrapper{
+    padding: 20px 0px 0px 40px;
+}
+
+.bgnyasir{
+    background: var(--main-color);
+    padding-bottom: 1.5rem;
+}
+
+.logo{
+    width: 137px;
+    height: 27px;
+}
+
+.nav-select{
+    font-weight: 400;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.nav-select a{
+    font-size: 14px;
+    color: var(--message-color);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px){
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 3rem;
+        
+    }
+
+    .logo-wrapper img{
+        height:2.5rem;
+        width: 100%;
+        
+    }
+   
+    .nav-select div{
+        margin: 0px 10px;
+        
+    }
+    .nav-select div a{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10rem;
+        
+    }
+
+    .logo-wrapper img{
+        height:2.5rem;
+        width: 100%;
+        
+    }
+   
+    .nav-select div{
+        margin: 10px 30px;
+        
+    }
+
+    .nav-select div a{
+        font-size: 23px;
+    }
+}

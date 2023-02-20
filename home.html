@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link
@@ -19,28 +20,32 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body style="font-family: 'Lato', sans-serif">
-    <header>
-      <nav>
-        
-          <div class="logo-wrapper">
-            <img class="logo" src="./assets/images/Logo White.png" alt="" />
-          </div>
-          <div class="nav-select">
-            <div><a href="">Product</a></div>
-            <div><a href="">Store</a></div>
-            <div><a href="">Contact</a></div>
-          </div>
-        
-      </nav>
+    <header >
+      <div id="navbar-display">
+
+        <script>
+          const elementDisplay = (navbars)=>{
+          fetch('./components/Navbar.html')
+        .then(res=>res.text())
+        .then(data=>{
+          console.log(data)
+          navbars.innerHTML = data;
+        })
+        };
+        elementDisplay( document.getElementById("navbar-display"))
+      </script>
+        </div>
       <div class="title-header">
-        <h1>Freshly Brewed Coffe & Tea</h1>
+        <h1>Freshly Brewed Coffee Tea</h1>
         <p>Best qualities from our local soil</p>
       </div>
     </header>
+    
     <div class="body-home">
-      <section class="introduction">
+      <section data-aos="fade-right" class="introduction">
         <img src="./assets/images/Who are we.jpg" alt="" />
         <div class="message">
           <p class="title-message">Who are we?</p>
@@ -52,7 +57,7 @@
           </p>
         </div>
       </section>
-      <section class="product">
+      <section data-aos="fade-left" class="product">
             <img src="./assets/images/Our products.jpg" alt="">
             <div class="message" >
 
@@ -61,11 +66,11 @@
                 <p class="paragraph">Our products contain the highest quality ingredients
                     processed with care.</p>
                 <button class="btn" type="submit">
-                    <a class="link-button" href="">See our coffee and tea</a>
+                    <a class="link-button" href="./product.html">See our coffee and tea</a>
                 </button>
             </div>
       </section>
-      <section class="hangout">
+      <section data-aos="fade-right" class="hangout">
         <img src="./assets/images/Hang out with us.jpg" alt="">
         <div class="message" >
             <h6 class="title-message">Hang out with us!</h6>
@@ -80,7 +85,7 @@ by nature, to help our planet survive.
         </div>
       </section>
 
-      <section class="findUs" >
+      <section data-aos="zoom-in" class="findUs" >
         <div>
             <div class="title-message find-message" >
                 <p>Find us out at Instagram</p>
@@ -105,43 +110,23 @@ by nature, to help our planet survive.
         </div>
       </section>
     </div>
-
-    <footer>
-        <div class="all-footer-wrapper">
-          <div class="logo-footer-wrapper">
-            <img class="logo-footer" src="./assets/images/Logo White.png" alt="">
-            <div class="logo-footer-right" >
-              <a href=""><img src="./assets/icons/MAIL ICON.svg" alt=""></a>
-              <a href=""><img src="./assets/icons/PHONE ICON.svg" alt=""></a>
-            </div>
-          </div>
-          <div class="list-wrapper">
-
-            <div class="big-list-wrapper-footer">
-              <h4>Product</h4>
-              <div class="small-list-wrapper-footer">
-                <a href="">Coffee Based</a>
-                <a href="">Non-coffee</a>
-                <a href="">Tea Based</a>
-              </div>
-            </div>
-            <div class="big-list-wrapper-footer">
-              <h4>Store</h4>
-              <div class="small-list-wrapper-footer">
-                <a href="">Location</a>
-              </div>
-            </div>
-            <div class="big-list-wrapper-footer">
-              <h4>Contact</h4>
-              <div class="small-list-wrapper-footer">
-                <a href="">Customer Service</a>
-              
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <p class="copyright">2022 © Designed by Progate Indonesia</p>
-    </footer>
+    <div id="footer-display">
+      <script>
+        const elementDisplayFooter = (display)=>{
+                fetch('./components/Footer.html')
+              .then(res=>res.text())
+              .then(data=>{
+                console.log(data)
+                display.innerHTML = data;
+              })
+              };
+              elementDisplayFooter( document.getElementById("footer-display"))
+      </script>
+    </div>
+  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

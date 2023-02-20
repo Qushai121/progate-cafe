@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link
+    rel="shortcut icon"
+    href="./assets/images/ninja.svg"
+    type="image/x-icon"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+</head>
+<body style="font-family: 'Lato', sans-serif">
+    <header class="bgnyasir" id="navbar-display" >
+      <script>
+        const elementDisplay = (navbars)=>{
+          fetch('./components/Navbar.html')
+        .then(res=>res.text())
+        .then(data=>{
+        
+          navbars.innerHTML = data;
+        })
+        };
+        elementDisplay( document.getElementById("navbar-display"))
+      </script>
+</header>
+<section>
+    <div class="all-card-wrapper">
+      <div id="product-title" >
+
+        <h6 class="title-card" >Our Coffee Based Products</h6>
+        <h5 class="message-card" >Locally sourced best ingredients = best coffee.</h5>
+      </div>
+      <div class="lagi" >
+
+        <div class="card-wrapper" id="card-js-display">
+        </div>
+      </div>
+    </div>
+</section>
+
+<div id="footer-display" >
+<script>
+  const elementDisplayFooter = (display)=>{
+          fetch('./components/Footer.html')
+        .then(res=>res.text())
+        .then(data=>{
+          
+          display.innerHTML = data;
+        })
+        };
+        elementDisplayFooter( document.getElementById("footer-display"))
+</script>
+</div>
+<script src="./components/Card.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

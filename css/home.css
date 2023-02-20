@@ -9,14 +9,15 @@
     --second-color:#143642;
     --third-color:#EC9A29;
     --fourth-color:#A8201A;
+    --message-color:#F9FBFE;
    
 }
 body{
-    color: #F9FBFE;
+    color: var(--message-color);
 }
 
 header{
-
+    overflow-x: hidden;
     background-image:linear-gradient(rgba(20, 54, 66, 0.7),rgba(20, 54, 66, 0.7)),url(../assets/images/Coffe\ Header.png);
    border-bottom-right-radius: 20px;
    border-bottom-left-radius: 20px;
@@ -24,33 +25,12 @@ header{
     background-size: cover;
 }
 
-.logo-wrapper{
-    padding: 20px 0px 0px 40px;
-}
-
-.logo{
-    width: 137px;
-    height: 27px;
-}
-
-.nav-select{
-    font-weight: 400;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 20px;
-}
-
-.nav-select a{
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-}
 
 .title-header{
+    
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: white;
     font-weight: 800;
     padding-top:40px ;
     text-align: center;
@@ -141,8 +121,8 @@ header{
 .link-button{
     font-weight: 400;
     font-size: 10px;
-    color: white;
     text-decoration: none;
+    color: var(--message-color);
     line-height: 15px;
 }
 
@@ -196,26 +176,6 @@ header{
         height: 60vh;
     }
 
-    nav{
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 3rem;
-        
-    }
-
-    .logo-wrapper img{
-        height:2.5rem;
-        width: 100%;
-        
-    }
-   
-    .nav-select div{
-        margin: 0px 10px;
-        
-    }
-    .nav-select div a{
-        font-size: 17px;
-    }
     .title-header{
         width: 30rem;
     }
@@ -286,30 +246,16 @@ header{
 }
 @media only screen and (min-width: 1440px) {
 
+    header{
+        height: 70vh;
+    }
     
-    nav{
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 10rem;
-        
-    }
-
-    .logo-wrapper img{
-        height:2.5rem;
-        width: 100%;
-        
-    }
-   
-    .nav-select div{
-        margin: 0px 30px;
-        
-    }
-
-    .nav-select div a{
-        font-size: 23px;
-    }
      .body-home{
         margin: 30px 20rem;
+     }
+
+     .introduction{
+        margin: 100px 0px;
      }
     
     .introduction img{
@@ -318,6 +264,8 @@ header{
     }
     
     .product {
+        
+        margin: 100px 0px;
         justify-content: space-between;
     }
     .product img{
@@ -326,6 +274,8 @@ header{
     }
 
     .hangout {
+        
+        margin: 100px 0px;
         justify-content: space-between;
     }
 
@@ -342,6 +292,9 @@ header{
         font-size: 20px;
     }
    
+    .findUs{
+        margin: 200px 0px;
+    }
     
     .btn{
         height: 50px;
