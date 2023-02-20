@@ -84,8 +84,8 @@ footer{
 
 @media only screen and (min-width: 1024px) {
     footer{
-        height: 40vh;
-        padding-bottom: 5vh;
+        height: 30vh;
+        margin: 10rem 0px 0px 0px;
     }
     .all-footer-wrapper{
         display: flex;

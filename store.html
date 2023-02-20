@@ -5,8 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/store.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link
+    rel="shortcut icon"
+    href="./assets/images/ninja.svg"
+    type="image/x-icon"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+<style>
     
+</style>
+<body style="font-family: 'Lato', sans-serif" >
+    <header class="bgnyasir" id="navbar-display" >
+      
+        <nav>   
+          <div class="logo-wrapper">
+            <img class="logo" src="./assets/images/Logo White.png" alt="" />
+          </div>
+          <div class="nav-select">
+            <div id="nav-dapat1" ><a href="../product.html">Product</a></div>
+            <div id="nav-dapat2" ><a href="../store.html">Store</a></div>
+            <div id="nav-dapat3" ><a href="../contact.html">Contact</a></div>
+          </div>
+          </nav>
+    
+  </header>
+  <section>
+    <div>
+        <div class="store-body" >
+          <!-- ini bisa pake api dari google maps  -->
+            <img src="./assets/images/maps.png" alt="">
+            <div>
+                <div class="find-us-tittle" >
+                    <h6>Find Us!</h6>
+                    <h5>Come visit us at our store or deliver to your house!</h5>
+                </div>
+                <div class="card-location-wrapper" >
+
+                    <div class="location-wrapper" >
+                        <div class="location-detail-wrapper">
+
+                            <h6>Block 71</h6>
+                            <p>Ariobimo Sentral, South Jakarta, RT.9/RW.4,
+                                East Kuningan, Setiabudi, Jakarta, 12950
+                            </p>
+                        </div>
+                    </div>
+                    <div class="location-wrapper" >
+                        <div class="location-detail-wrapper">
+
+                            <h6>Woodland Park Residence</h6>
+                            <p>Jl. Raya Kalibata No.22, RW.7, Rawajati, Kec.
+                                Pancoran, Kota Jakarta Selatan, Daerah
+                                Khusus Ibukota Jakarta 12750
+                            </p>
+                        </div>
+                    </div>
+                    <div class="location-wrapper" >
+                        <div class="location-detail-wrapper">
+                            
+                            <h6>IKEA Alam Sutera</h6>
+                            <p>Alam Sutera, Jl. Jalur Sutera Boulevard
+                                No. 45, Kunciran, Kec. Pinang, Kota
+                                Tangerang, Banten 15320
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <div id="footer-display" >
+    <script>
+      const elementDisplayFooter = (display)=>{
+              fetch('./components/Footer.html')
+            .then(res=>res.text())
+            .then(data=>{
+              
+              display.innerHTML = data;
+            })
+            };
+            elementDisplayFooter( document.getElementById("footer-display"))
+    </script>
+    </div>
+    <script src="./navActive.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

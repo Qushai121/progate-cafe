@@ -31,7 +31,7 @@
           fetch('./components/Navbar.html')
         .then(res=>res.text())
         .then(data=>{
-          console.log(data)
+      
           navbars.innerHTML = data;
         })
         };
@@ -80,7 +80,7 @@
 by nature, to help our planet survive.
             </p>
             <button class="btn">
-                <a class="link-button" href="">Find our cafes</a>
+                <a class="link-button" href="./store.html">Find our cafes</a>
             </button>
         </div>
       </section>
@@ -104,7 +104,7 @@ by nature, to help our planet survive.
                 <p class="paragraph">If you have any questions or interested to
                     cooperate with us, kindly let us know here:</p>
                     <button class="btn responsive">
-                        <a class="link-button" href="">Contact Us</a>
+                        <a class="link-button" href="./contact.html">Contact Us</a>
                     </button>
             </div>
         </div>
@@ -116,15 +116,15 @@ by nature, to help our planet survive.
                 fetch('./components/Footer.html')
               .then(res=>res.text())
               .then(data=>{
-                console.log(data)
+            
                 display.innerHTML = data;
               })
               };
               elementDisplayFooter( document.getElementById("footer-display"))
       </script>
     </div>
-  
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
     <script>
       AOS.init();
     </script>

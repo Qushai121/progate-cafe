@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link
+    rel="shortcut icon"
+    href="./assets/images/ninja.svg"
+    type="image/x-icon"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+</head>
+<body style="font-family: 'Lato', sans-serif">
+    <header class="bgnyasir" id="navbar-display" >
+      <nav>   
+        <div class="logo-wrapper">
+          <img class="logo" src="./assets/images/Logo White.png" alt="" />
+        </div>
+        <div class="nav-select">
+          <div id="nav-dapat1" ><a href="../product.html">Product</a></div>
+          <div id="nav-dapat2" ><a href="../store.html">Store</a></div>
+          <div id="nav-dapat3" ><a href="../contact.html">Contact</a></div>
+        </div>
+        </nav>
+  </header>
+  <section>
+    <div class="contact-wrapper">
+      <h1>How can we help?</h1>
+      <div class="input-container">
+        <div class="input-wrapper">
+            <div>
+            <label for="name">Name</label>
+            <span></span>
+             <input type="text" name="name">
+            </div>
+             <div>
+            <label for="email">Email</label>
+            <span></span>
+            <input type="email" name="email" id="">
+          </div>
+            <div>
+            <label for="phone">Phone Number</label>
+            <span></span>
+                <input class="ps" type="number" name="phone" id="">
+              </div>
+                <div>
+            <label for="subject">Subject</label>
+            <span></span>
+            <input type="text" name="subject" id="">
+          </div>
+            <div>
+            
+                <label for="message">Message</label>
+                <span></span>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+          </div>
+        <button><p>Submit</p></button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<div id="footer-display" >
+  <script>
+    const elementDisplayFooter = (display)=>{
+            fetch('./components/Footer.html')
+          .then(res=>res.text())
+          .then(data=>{
+            
+            display.innerHTML = data;
+          })
+          };
+          elementDisplayFooter( document.getElementById("footer-display"))
+  </script>
+  </div>
+ 
+  <script src="./navActive.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

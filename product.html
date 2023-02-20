@@ -26,17 +26,16 @@
 </head>
 <body style="font-family: 'Lato', sans-serif">
     <header class="bgnyasir" id="navbar-display" >
-      <script>
-        const elementDisplay = (navbars)=>{
-          fetch('./components/Navbar.html')
-        .then(res=>res.text())
-        .then(data=>{
-        
-          navbars.innerHTML = data;
-        })
-        };
-        elementDisplay( document.getElementById("navbar-display"))
-      </script>
+      <nav>   
+        <div class="logo-wrapper">
+          <img class="logo" src="./assets/images/Logo White.png" alt="" />
+        </div>
+        <div class="nav-select">
+          <div id="nav-dapat1" ><a href="../product.html">Product</a></div>
+          <div id="nav-dapat2" ><a href="../store.html">Store</a></div>
+          <div id="nav-dapat3" ><a href="../contact.html">Contact</a></div>
+        </div>
+        </nav>
 </header>
 <section>
     <div class="all-card-wrapper">
@@ -66,6 +65,7 @@
         elementDisplayFooter( document.getElementById("footer-display"))
 </script>
 </div>
+<script src="./navActive.js"></script>
 <script src="./components/Card.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

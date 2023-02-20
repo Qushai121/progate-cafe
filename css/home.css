@@ -14,6 +14,7 @@
 }
 body{
     color: var(--message-color);
+    background-color: #F5F5F5;
 }
 
 header{
